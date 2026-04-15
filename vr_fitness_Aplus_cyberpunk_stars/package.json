@@ -1,0 +1,11 @@
+{
+  "name": "vr-fitness-a-plus-cyberpunk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

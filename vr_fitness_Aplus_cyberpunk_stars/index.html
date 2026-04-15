@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comfort-First VR Fitness</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="glow glow-left"></div>
+  <div class="glow glow-right"></div>
+
+  <main class="stage">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen-shell">
+
+        <!-- Screen 1 -->
+        <section class="view active" data-index="0">
+          <header class="topbar center"><span>VR Fitness</span></header>
+          <div class="content">
+            <p class="kicker">Find your flow</p>
+            <h1 class="page-title">What do you want today?</h1>
+
+            <div class="pill-row">
+              <span class="pill">Strength</span>
+              <span class="pill">Cardio</span>
+              <span class="pill">Mobility</span>
+              <span class="pill">Recovery</span>
+            </div>
+
+            <button class="hero-card clickable" data-go="1">
+              <img src="assets/home_top.png" alt="Featured workout" />
+              <div class="overlay">
+                <span class="eyebrow">Recommended for you</span>
+                <strong>Light Cardio Flow</strong>
+              </div>
+            </button>
+
+            <div class="mini-grid">
+              <div class="mini-card">⚡ Quick Burn</div>
+              <div class="mini-card">🎯 Focus</div>
+            </div>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 2 -->
+        <section class="view" data-index="1">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span></span></header>
+          <div class="content centered">
+            <div class="dots">○ ○ ○ ○ ○</div>
+            <h2 class="screen-title">Safety Check</h2>
+            <p class="subtext">Make sure your setup feels safe and comfortable before you begin.</p>
+            <div class="portrait-card cyber-frame"><img src="assets/safety.png" alt="Safety check" /></div>
+            <div class="pill-row small">
+              <span class="pill">Clear area</span>
+              <span class="pill">Stand comfortably</span>
+              <span class="pill">Adjust headset</span>
+            </div>
+            <button class="button ghost">Workout picker</button>
+            <button class="button clickable" data-go="2">Continue</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 3 -->
+        <section class="view" data-index="2">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span></span></header>
+          <div class="content centered">
+            <h2 class="screen-title">Comfort Setting</h2>
+            <p class="subtext">Choose a setup that feels calm, supportive, and beginner-friendly.</p>
+            <div class="landscape-card cyber-frame"><img src="assets/comfort.png" alt="Comfort setting" /></div>
+            <div class="option-list">
+              <div class="option active">
+                <span class="option-icon">🌿</span>
+                <div><strong>Calm Mode</strong><small>Gentle pace and softer prompts</small></div>
+              </div>
+              <div class="option">
+                <span class="option-icon">🎧</span>
+                <div><strong>Focus Audio</strong><small>Clear guided cues while training</small></div>
+              </div>
+            </div>
+            <button class="button clickable" data-go="3">Ready!!!</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 4 -->
+        <section class="view" data-index="3">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span class="small-top">Cancel</span></header>
+          <div class="content">
+            <h2 class="screen-title center-text">Choose Workout</h2>
+            <div class="workout-stack">
+              <button class="workout-card clickable" data-go="4">
+                <img src="assets/choose.png" alt="Light Cardio Flow" />
+                <div class="workout-copy"><strong>Light Cardio Flow</strong><small>10 min • Beginner</small></div>
+              </button>
+              <button class="workout-card clickable" data-go="4"><div class="placeholder">Balance Training</div></button>
+              <button class="workout-card clickable" data-go="4"><div class="placeholder">Bodyweight Basics</div></button>
+              <button class="workout-card clickable" data-go="4"><div class="placeholder">Relax &amp; Cooldown</div></button>
+            </div>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 5 -->
+        <section class="view" data-index="4">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span class="small-top">Cancel</span></header>
+          <div class="content">
+            <div class="landscape-card tall cyber-frame"><img src="assets/workout.png" alt="Workout in progress" /></div>
+            <p class="instruction">Lift arms slowly</p>
+            <div class="progress"><span></span></div>
+            <div class="time-box">
+              <div class="label">Time Remaining</div>
+              <div class="time">04:30</div>
+            </div>
+            <button class="button clickable" data-go="5">Next</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 6 -->
+        <section class="view" data-index="5">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span class="small-top">Cancel</span></header>
+          <div class="content">
+            <h2 class="screen-title center-text">Comfort Adjust</h2>
+            <div class="list-buttons">
+              <button class="button neon-alt">Slow pace</button>
+              <button class="button neon-alt">Reduce Pace</button>
+              <button class="button neon-alt">Increase Pace</button>
+            </div>
+            <div class="landscape-card cyber-frame"><img src="assets/adjust.png" alt="Comfort adjust" /></div>
+            <button class="button clickable" data-go="6">Continue</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 7 -->
+        <section class="view" data-index="6">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span class="small-top">Cancel</span></header>
+          <div class="content">
+            <h2 class="screen-title center-text">Cool Down</h2>
+            <div class="landscape-card cyber-frame"><img src="assets/cooldown.png" alt="Cooldown" /></div>
+            <p class="question">How did it go?</p>
+            <div class="emoji-row">
+              <button class="emoji clickable" data-go="7"><span>🙂</span><small>Good</small></button>
+              <button class="emoji clickable" data-go="7"><span>😐</span><small>Okay</small></button>
+              <button class="emoji clickable" data-go="7"><span>😓</span><small>Hard</small></button>
+            </div>
+            <button class="button clickable" data-go="7">Continue</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+        <!-- Screen 8 -->
+        <section class="view" data-index="7">
+          <header class="topbar"><span>←</span><span>VR Fitness</span><span class="small-top">Cancel</span></header>
+          <div class="content">
+            <h2 class="screen-title center-text">WORK OUT COMPLETE!!</h2>
+            <div class="reward-row cyber-frame">
+              <div class="star">⭐</div>
+              <div class="reward-copy"><strong>Great job!</strong><small>You finished your session and earned progress.</small></div>
+            </div>
+            <div class="landscape-card final cyber-frame"><img src="assets/complete.png" alt="Workout complete" /></div>
+            <div class="summary cyber-frame">
+              <div class="summary-icon">⚡</div>
+              <div class="summary-copy-2">
+                <p class="summary-title">Workout Summary</p>
+                <p>Light Cardio Flow</p>
+                <p>Time 10 minutes</p>
+              </div>
+              <div class="summary-kcal">🔥 65</div>
+            </div>
+            <div class="stat-grid">
+              <div class="stat"><strong>25 XP</strong><small>earned</small></div>
+              <div class="stat"><strong>1</strong><small>session done</small></div>
+              <div class="stat"><strong>Next</strong><small>Stretch</small></div>
+            </div>
+            <button class="button clickable" data-go="0">Continue and save stats!!</button>
+          </div>
+          <footer class="bottom-nav"><span>⌂</span><span>⌕</span><span>⊕</span><span>🔔</span><span>◎</span></footer>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="floating-nav">
+    <button id="prevBtn" class="float-btn">← Previous</button>
+    <button id="nextBtn" class="float-btn primary">Next →</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
